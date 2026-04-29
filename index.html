@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>70 Años Teresa Wdoviak</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --rosa: #e85d75;
+      --rosa-oscuro: #d63d62;
+      --rojo: #b1123b;
+      --rojo-oscuro: #6e0a24;
+      --crema: #fff8f8;
+      --texto: #2f2a26;
+      --whatsapp: #25D366;
+      --gris: #8f8f8f;
+      --fondo-box: #fdeff2;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(180deg, var(--rojo), var(--rojo-oscuro));
+      font-family: 'Playfair Display', serif;
+      display: flex;
+      justify-content: center;
+      padding: 40px 16px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 430px;
+    }
+
+    .card {
+      position: relative;
+      background: var(--crema);
+      border-radius: 24px;
+      padding: 42px 26px 60px;
+      box-shadow: 0 25px 55px rgba(0, 0, 0, 0.35);
+      overflow: hidden;
+    }
+
+    .number-bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 170px;
+      font-weight: 700;
+      color: rgba(232, 93, 117, 0.08);
+      pointer-events: none;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+
+    .photo {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      margin: 0 auto 24px;
+      overflow: hidden;
+      border: 5px solid var(--rosa);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 48px;
+      color: var(--rojo);
+      margin: 0 0 12px;
+      line-height: 1.2;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: var(--texto);
+      margin-bottom: 10px;
+    }
+
+    .divider {
+      width: 80px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--rosa), var(--rojo));
+      margin: 28px auto;
+      border-radius: 999px;
+    }
+
+    section {
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: translateY(25px);
+      transition: all 0.7s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .box {
+      background: var(--fondo-box);
+      border-radius: 18px;
+      padding: 20px;
+    }
+
+    .section-title {
+      color: var(--rojo);
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--texto);
+    }
+
+    .highlight {
+      color: var(--rojo);
+      font-weight: 700;
+    }
+
+    .countdown {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--rojo);
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      margin: 8px auto;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      font-size: 15px;
+      border: none;
+    }
+
+    .btn-confirm {
+      background: var(--whatsapp);
+      color: white;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+    }
+
+    .btn-no {
+      background: transparent;
+      border: 2px solid var(--gris);
+      color: var(--gris);
+    }
+
+    .btn-maps {
+      background: transparent;
+      border: 2px solid var(--rojo);
+      color: var(--rojo);
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .signature {
+      margin-top: 30px;
+      font-family: 'Great Vibes', cursive;
+      font-size: 38px;
+      color: var(--rojo);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="number-bg">70</div>
+
+      <div class="content">
+        <div class="photo">
+          <img src="teresa.jpeg" alt="Teresa Wdoviak">
+        </div>
+
+        <h1>¡Sorpresa!<br>Teresa cumple 70 años</h1>
+        <div class="subtitle">Una noche muy especial para celebrar su vida</div>
+        <div class="subtitle">📅 Viernes 29 de mayo de 2026</div>
+
+        <div class="divider"></div>
+
+        <section class="box">
+          <p>
+            Los hijos de <span class="highlight">Teresa Wdoviak</span> estamos organizando una fiesta sorpresa y nos encantaría contar con tu presencia para compartir este momento inolvidable.
+          </p>
+        </section>
+
+        <section class="box">
+          <div class="section-title">🎉 Valor de la tarjeta</div>
+          <p><span class="highlight">$23.000</span> por persona</p>
+        </section>
+
+        <section class="box">
+          <div class="section-title">💳 Formas de pago</div>
+          <p>
+            Efectivo o transferencia bancaria.<br>
+            Consultanos para recibir los datos de pago.
+          </p>
+        </section>
+
+        <section class="box">
+          <div class="section-title">🕘 Horarios</div>
+          <p>
+            Recepción: 20:30 hs<br>
+            Inicio de la celebración: 21:00 hs
+          </p>
+        </section>
+
+        <section class="box">
+          <div class="section-title">🍽️ Incluye</div>
+          <p>
+            Cena completa, brindis, mesa dulce y una noche llena de emociones, música y alegría.
+          </p>
+        </section>
+
+        <section class="box">
+          <div class="section-title">🤫 Importante</div>
+          <p>
+            ¡La fiesta será sorpresa! Te pedimos mantenerlo en secreto para que Teresa viva un momento verdaderamente mágico.
+          </p>
+        </section>
+
+        <section class="box">
+          <div class="section-title">📍 Lugar</div>
+          <p>Salón de eventos AEMO, Oberá</p>
+          <a class="btn btn-maps" target="_blank" href="https://www.google.com/maps/place/Salon+de+eventos+AEMO/@-27.4896404,-55.1131796,17z">
+            🧭 Cómo llegar
+          </a>
+        </section>
+
+        <section class="box">
+          <div class="section-title">📌 Confirmación</div>
+          <p>Por favor, confirmar asistencia antes del <span class="highlight">15 de mayo</span>.</p>
+        </section>
+
+        <section class="box">
+          <div class="section-title">⏳ Falta</div>
+          <div class="countdown" id="contador"></div>
+        </section>
+
+        <section>
+          <a class="btn btn-confirm" onclick="confirmar('si')">✅ Confirmar asistencia</a>
+          <a class="btn btn-no" onclick="confirmar('no')">❌ No podré asistir</a>
+        </section>
+
+        <section class="box">
+          <p>
+            Tu presencia será el mejor regalo para celebrar juntos este momento tan especial.
+          </p>
+        </section>
+
+        <div class="signature">Familia Wdoviak</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(section => observer.observe(section));
+
+    function confirmar(respuesta) {
+      const tel = '543755671237';
+      const mensaje = respuesta === 'si'
+        ? '¡Hola! Confirmo mi asistencia a la fiesta sorpresa de Teresa 🎉'
+        : '¡Hola! No podré asistir a la fiesta sorpresa de Teresa, pero les deseo una hermosa celebración ❤️';
+
+      window.open(`https://wa.me/${tel}?text=${encodeURIComponent(mensaje)}`, '_blank');
+    }
+
+    const evento = new Date('2026-05-29T21:00:00').getTime();
+    const contador = document.getElementById('contador');
+
+    setInterval(() => {
+      const ahora = new Date().getTime();
+      const diferencia = evento - ahora;
+
+      if (diferencia <= 0) {
+        contador.innerHTML = '🎂 ¡Hoy celebramos los 70 de Teresa!';
+        return;
+      }
+
+      const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
+      const minutos = Math.floor((diferencia / (1000 * 60)) % 60);
+
+      contador.innerHTML = `${dias} días · ${horas} hs · ${minutos} min`;
+    }, 1000);
+  </script>
+</body>
+</html>
